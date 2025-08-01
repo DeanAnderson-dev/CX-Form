@@ -7,15 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-    <h1>FTTx Drop Plan Form</h1>
-    <p>The information entered is for drop plan locates.</p>
+<section id="header">
+    <div>
+        <h1>FTTx Drop Plan Form</h1>
+        <p>The information entered is for drop plan locates.</p>
+    </div>
 </section>
-<section>
+<section class="container">
     <p>
         <a href="https://www.access-programmers.co.uk/forums/threads/copy-previous-record-fields-into-new-record-form-fields.307738/">pull information from the previous form</a>
     </p>
     <form action="">
+        <div>
+            <h2 class="h2">Contact Information</h2>
+        </div>
         <div>
             <label required for="fullname">Full Name:</label>
             <input 
@@ -98,9 +103,10 @@
 </section>
 <!-- Draw pad found at https://labex.io/tutorials/javascript-creating-a-drawing-board-web-app-445711 -->
 <section>
-    <h2>Drawing Board</h2>
+    
      <div class="container">
     <!--add canvas-->
+    <h2>Drawing Board</h2>
     <canvas id="whiteboard" width="800" height="400"></canvas>
     <div class="controls">
       <input type="color" id="color-picker" value="#000000" />

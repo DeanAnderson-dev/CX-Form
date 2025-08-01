@@ -5,19 +5,26 @@ body {
   padding: 0;
 }
 
-header {
-  background: linear-gradient(135deg, #57efbf, #64a8e4);
+.header {
+   background: linear-gradient(135deg, #57efbf, #64a8e4);
   color: #fff;
   text-align: center;
   padding: 20px 0;
 }
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  background: linear-gradient(125deg, #67a5f5, #f3bbe0, #64a0e4, #d364e4);
+  /* background: linear-gradient(125deg, #67a5f5, #f3bbe0, #64a0e4, #d364e4); */
   border-radius: 10px;
   padding: 10px;
 }
