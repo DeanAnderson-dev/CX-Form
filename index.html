@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="app.js">
+</head>
+
+<body>
+<section>
+    <h1>Fibre Survey</h1>
+    <p>Please enter your information that we may reach out to you when service is available.</p>
+</section>
+<section>
+    <h2>Contact Information</h2>
+    <form action="">
+        <div>
+            <label required for="fullname">Full Name:</label>
+            <input 
+                required 
+                type="name" 
+                id="fullname" 
+                minlength="5" 
+                maxlength="64" 
+                placeholder="Full Name"
+            />
+             <label required for="altname">Alt Name:</label>
+            <input 
+                type="name" 
+                id="altname" 
+                minlength="5" 
+                maxlength="64" 
+                placeholder="Full Name"
+            />
+        </div>
+        <div>
+            <label required for="phone" >Phone Number (Required field):</label>
+            <input
+                required
+                type="phone"
+                name="phone"
+                id="phone"
+                minlength="5"
+                maxlength="64"
+                placeholder="555-555-5555"
+            />
+            <br/>
+            <label for="altphone" >Alt Phone Number:</label>
+            <input
+                type="phone"
+                name="phone"
+                id="altname"
+                minlength="5"
+                maxlength="64"
+                placeholder="555-555-5555"
+            />
+        </div>
+        <div>
+            <label required for="email" >Email Address:</label>
+            <input            
+            type="email"
+            name="email"
+            id="email"
+            minlength="5"
+            maxlength="64"
+            placeholder="email@address.com"
+            />
+        </div>
+        <div>
+            <label required for="altemail" >Alt Email Address:</label>
+            <input            
+            type="email"
+            name="altemail"
+            id="altemail"
+            minlength="5"
+            maxlength="64"
+            placeholder="email@address.com"
+            />
+        </div>
+        <div>
+            <label for="slc">SLC Site Number:</label>
+            <input 
+            type="text number" 
+            name="slcnumber" 
+            id="slc"
+            placeholder="HH123 123-1">
+        </div>
+    <section>
+        <h2>Address</h2>
+        <div>
+            <label for="address1">Address:</label>
+            <input type="text"
+                    name="address1"
+                    id="address1"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Street">
+        </div>
+        <div>
+            <label for="address2">Address 2:</label>
+            <input type="text"
+                    name="address2"
+                    id="address2"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Street">
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text"
+                    name="city"
+                    id="city"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="City">
+        </div>
+        <div>
+            <label for="province">Province:</label>
+            <input type="text"
+                    name="province"
+                    id="province"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Province">
+        </div>
+        <div>
+            <label for="postalcode">Postal Code:</label>
+            <input type="text"
+                    name="postalcode"
+                    id="postalcode"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Postal Code">
+        </div>
+    </section>
+    <section>
+    <h2>Billing Address</h2>
+        <div>
+            <label for="address1">Address:</label>
+            <input type="text"
+                    name="address1"
+                    id="address1"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Street">
+        </div>
+        <div>
+            <label for="address2">Address 2:</label>
+            <input type="text"
+                    name="address2"
+                    id="address2"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Street">
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text"
+                    name="city"
+                    id="city"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="City">
+        </div>
+        <div>
+            <label for="province">Province:</label>
+            <input type="text"
+                    name="province"
+                    id="province"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Province">
+        </div>
+        <div>
+            <label for="postalcode">Postal Code:</label>
+            <input type="text"
+                    name="postalcode"
+                    id="postalcode"
+                    minlength="1"
+                    maxlength="64"
+                    placeholder="Postal Code">
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Check the ones that apply:</h2>
+            <div>
+                <input type="checkbox">
+                <label for="what-applies">Renter</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="what-applies">Home Owner</label>
+            </div>
+                <input type="checkbox">
+                <label for="what-applies">Rent Lot / Own Home</label>
+        </div>
+        <br/>
+        <div>
+            <div>
+                <input type="checkbox">
+                <label for="what-applies">Agree to Drop Installation (free of charge during construction)</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label for="what-applies">Would like to take service (when available)</label>
+            </div>
+        </div>
+    </section>
+<br/>
+        <div>
+            <textarea name="" id="">Signature pad</textarea>
+            <a href="https://github.com/szimek/signature_pad/blob/master/docs/js/app.js"> This is where the JS for signature pad will go</a>
+        </div>
+<br/>
+        <div>
+            <button type="submit">Submit Form</button>
+        </div>
+<br/>
+        <div>
+            <p>
+                <a href="https://www.w3schools.com/howto/howto_css_next_prev.asp">do we go to the next page? or continuing to scroll down the page.</a>
+            </p>
+        </div>
+    </form>
+</section>
+    
+</body>
+    <script src="script.js"></script>
+</html>
