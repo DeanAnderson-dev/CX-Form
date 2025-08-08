@@ -2,190 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
     <title>Contact Form</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="app.js">
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-39365077-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 </head>
 
-<body>
-<section>
+<body class="container">
+<div>
     <h1>Fibre Survey</h1>
     <p>Please enter your information that we may reach out to you when service is available.</p>
-</section>
-<section>
-    <h2>Contact Information</h2>
-    <form action="">
+</div>
+<div>
+
+   <fieldset>
+        <form action="surveyformpg2.html">
+            <legend aria-readonly="Contact Information Form">Contact Information</legend>
+            <label aria-readonly="Full Name">Full Name:<br />
+            <input aria-required="true" type="text" name="fullName" id="fullName" placeholder="Name"/></label><br />
+            <label aria-readonly="Address line 1">Address<br />
+            <input aria-required="true" type="text" name="address" id="address" placeholder="Address"/></label><br>
+            <label aria-readonly="Address line 2">Address 2<br />
+            <input aria-placeholder="Address line 2" type="text" name="address2" id="address2" placeholder="Address 2"/></label><br>
+            <label aria-required="Phone Number" >Phone:<br />
+            <input aria-required="true" type="text" name="phone" id="phone" placeholder="Phone Number"/></label><br />
+            <label aria-readonly="Alt Phone">Alt Phone:<br />
+            <input aria-placeholder="Alt Phone" type="text" name="altphone" id="altphone" placeholder="Alt Phone"/></label><br> 
+            <label aria-hidden="true" for="slcnumber">SLC Site Number:</label><br>
+            <input aria-hidden="true" type="text" name="slcnumber" id="slcnumber" placeholder="HH123 123-1"/>
+        
+   
+    <div>
         <div>
-            <label required for="fullname">Full Name:</label>
-            <input 
-                required 
-                type="name" 
-                id="fullname" 
-                minlength="5" 
-                maxlength="64" 
-                placeholder="Full Name"
-            />
-             <label required for="altname">Alt Name:</label>
-            <input 
-                type="name" 
-                id="altname" 
-                minlength="5" 
-                maxlength="64" 
-                placeholder="Full Name"
-            />
-        </div>
-        <div>
-            <label required for="phone" >Phone Number (Required field):</label>
-            <input
-                required
-                type="phone"
-                name="phone"
-                id="phone"
-                minlength="5"
-                maxlength="64"
-                placeholder="555-555-5555"
-            />
-            <br/>
-            <label for="altphone" >Alt Phone Number:</label>
-            <input
-                type="phone"
-                name="phone"
-                id="altname"
-                minlength="5"
-                maxlength="64"
-                placeholder="555-555-5555"
-            />
-        </div>
-        <div>
-            <label required for="email" >Email Address:</label>
-            <input            
-            type="email"
-            name="email"
-            id="email"
-            minlength="5"
-            maxlength="64"
-            placeholder="email@address.com"
-            />
-        </div>
-        <div>
-            <label required for="altemail" >Alt Email Address:</label>
-            <input            
-            type="email"
-            name="altemail"
-            id="altemail"
-            minlength="5"
-            maxlength="64"
-            placeholder="email@address.com"
-            />
-        </div>
-        <div>
-            <label for="slc">SLC Site Number:</label>
-            <input 
-            type="text number" 
-            name="slcnumber" 
-            id="slc"
-            placeholder="HH123 123-1">
-        </div>
-    <section>
-        <h2>Address</h2>
-        <div>
-            <label for="address1">Address:</label>
-            <input type="text"
-                    name="address1"
-                    id="address1"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Street">
-        </div>
-        <div>
-            <label for="address2">Address 2:</label>
-            <input type="text"
-                    name="address2"
-                    id="address2"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Street">
-        </div>
-        <div>
-            <label for="city">City:</label>
-            <input type="text"
-                    name="city"
-                    id="city"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="City">
-        </div>
-        <div>
-            <label for="province">Province:</label>
-            <input type="text"
-                    name="province"
-                    id="province"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Province">
-        </div>
-        <div>
-            <label for="postalcode">Postal Code:</label>
-            <input type="text"
-                    name="postalcode"
-                    id="postalcode"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Postal Code">
-        </div>
-    </section>
-    <section>
-    <h2>Billing Address</h2>
-        <div>
-            <label for="address1">Address:</label>
-            <input type="text"
-                    name="address1"
-                    id="address1"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Street">
-        </div>
-        <div>
-            <label for="address2">Address 2:</label>
-            <input type="text"
-                    name="address2"
-                    id="address2"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Street">
-        </div>
-        <div>
-            <label for="city">City:</label>
-            <input type="text"
-                    name="city"
-                    id="city"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="City">
-        </div>
-        <div>
-            <label for="province">Province:</label>
-            <input type="text"
-                    name="province"
-                    id="province"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Province">
-        </div>
-        <div>
-            <label for="postalcode">Postal Code:</label>
-            <input type="text"
-                    name="postalcode"
-                    id="postalcode"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Postal Code">
-        </div>
-    </section>
-    <section>
-        <div>
-            <h2>Check the ones that apply:</h2>
+            <h2>Check What Applies:</h2>
             <div>
                 <input type="checkbox">
                 <label for="what-applies">Renter</label>
@@ -194,10 +57,12 @@
                 <input type="checkbox">
                 <label for="what-applies">Home Owner</label>
             </div>
+            <div>
                 <input type="checkbox">
                 <label for="what-applies">Rent Lot / Own Home</label>
+            </div>
         </div>
-        <br/>
+        <hr>
         <div>
             <div>
                 <input type="checkbox">
@@ -208,25 +73,37 @@
                 <label for="what-applies">Would like to take service (when available)</label>
             </div>
         </div>
-    </section>
+    </div>
 <br/>
+<hr>
         <div>
-            <textarea name="" id="">Signature pad</textarea>
-            <a href="https://github.com/szimek/signature_pad/blob/master/docs/js/app.js"> This is where the JS for signature pad will go</a>
+              <div id="signature-pad" class="signature-pad">
+    <div id="canvas-wrapper" class="signature-pad--body">
+      <canvas></canvas>
+    </div>
+    <div class="signature-pad--footer">
+      <div class="description">Sign above</div>
+      <div class="signature-pad--actions">
+        <div class="column">
+          <button type="button" class="button clear" data-action="clear">Clear</button>
+          <button type="button" class="button" data-action="undo" title="Ctrl-Z">Undo</button>
+          <button type="button" class="button" data-action="redo" title="Ctrl-Y">Redo</button>
         </div>
-<br/>
-        <div>
-            <button type="submit">Submit Form</button>
+        <hr>
+      <div>
+      <input aria-describedby="Submit" class="button" type="submit" value="Submit" onclick="getData()" data-action="save-png">
+        <input aria-describedby="Reset" class="button" type="reset">
         </div>
-<br/>
-        <div>
-            <p>
-                <a href="https://www.w3schools.com/howto/howto_css_next_prev.asp">do we go to the next page? or continuing to scroll down the page.</a>
-            </p>
-        </div>
+    </div>
+  </div>
+
+
     </form>
-</section>
-    
+    </fieldset>
+</div>
 </body>
     <script src="script.js"></script>
+    <script src="signature_pad.umd.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.1.7/dist/signature_pad.umd.min.js"></script>
 </html>

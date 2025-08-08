@@ -6,101 +6,28 @@
     <title>FTTx Drop Plan Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="container">
 <section id="header">
     <div>
         <h1>FTTx Drop Plan Form</h1>
         <p>The information entered is for drop plan locates.</p>
     </div>
 </section>
-<section class="container">
-    <p>
-        <a href="https://www.access-programmers.co.uk/forums/threads/copy-previous-record-fields-into-new-record-form-fields.307738/">pull information from the previous form</a>
-    </p>
-    <form action="">
-        <div>
-            <h2 class="h2">Contact Information</h2>
-        </div>
-        <div>
-            <label required for="fullname">Full Name:</label>
-            <input 
-                required 
-                type="name" 
-                id="fullname" 
-                minlength="5" 
-                maxlength="64" 
-                placeholder="Full Name"
-            />
-        </div>
-        <div>
-            <label required for="phone" >Phone Number (Required field):</label>
-            <input
-                required
-                type="phone"
-                name="phone"
-                id="phone"
-                minlength="5"
-                maxlength="64"
-                placeholder="555-555-5555"
-            />
-            <br/>
-            <label for="altphone" >Alt Phone Number:</label>
-            <input
-                type="phone"
-                name="phone"
-                id="altname"
-                minlength="5"
-                maxlength="64"
-                placeholder="555-555-5555"
-            />
-        </div>
-        <div>
-            <label for="slc">SLC Site Number:</label>
-            <input 
-            type="text number" 
-            name="slcnumber" 
-            id="slc"
-            placeholder="HH123 123-1">
-        </div>
-    <section>
-        <h2>Address</h2>
-        <div>
-            <label for="address1">Address:</label>
-            <input type="text"
-                    name="address1"
-                    id="address1"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Street">
-        </div>
-        <div>
-            <label for="address2">Address 2:</label>
-            <input type="text"
-                    name="address2"
-                    id="address2"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Street">
-        </div>
-        <div>
-            <label for="city">City:</label>
-            <input type="text"
-                    name="city"
-                    id="city"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="City">
-        </div>
-        <div>
-            <label for="province">Province:</label>
-            <input type="text"
-                    name="province"
-                    id="province"
-                    minlength="1"
-                    maxlength="64"
-                    placeholder="Province">
-        </div>
-</section>
+<fieldset> 
+<div>
+ 
+ <div style=" font-size: 20px;  color: rgb(32, 7, 63); text-align: center;">
+    
+    Full Name:<span id="data"></span><br> 
+    Address: <span id="data1"> </span><br>
+    Address2: <span id="data2"></span><br>
+    Phone Number:<span id="data3"></span><br>
+    Alt Phone:<span id="data4"></span><br>
+    SLC Number:<span id="data5"></span><br>
+    </div>
+</div>
+
+
 <!-- Draw pad found at https://labex.io/tutorials/javascript-creating-a-drawing-board-web-app-445711 -->
 <section>
     
@@ -115,8 +42,13 @@
       <button id="clear-btn">Clear</button>
     </div>
   </div>
-        
+</Fieldset>        
 </section>
     <script src="script.js"></script>
+</body>
+
+
+  <script src="js/signature_pad.umd.min.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
